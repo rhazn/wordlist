@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+header {
+  background: #146528;
+  color: #ffffff;
+  padding: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3 {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.source {
+  color: gray;
+  font-size: smaller;
+  padding: 0.5rem;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main > * {
+  width: 30%;
+  margin: 1rem;
+}
+
+.word-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid;
 }
 
-.App-link {
-  color: #61dafb;
+.word-list__title {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.word-list__next {
+  cursor: pointer;
+  user-select: none;
+}
+.word-list__active-word {
+  font-size: 2rem;
+  padding: 1rem;
+
+  text-decoration: solid underline #146528 5px;
+}
+
+.word-list__active-word::first-letter {
+  font-size: 200%;
+  color: #146528;
+}
+
+.word-list__muted-words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-list__muted-words__muted-word {
+  font-size: 1rem;
+  padding: 1rem;
+  color: grey;
+
+  user-select: none;
 }
