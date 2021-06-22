@@ -1,0 +1,1 @@
+import{p as o,b as r}from"./p-31589c69.js";(()=>{const r=import.meta.url,s={};return""!==r&&(s.resourcesUrl=new URL(".",r).href),o(s)})().then((o=>r([["p-47208650",[[1,"app-root"],[1,"word-list",{name:[1],words:[16],maxWordsShown:[2,"max-words-shown"],availableWords:[32]}]]]],o)));
